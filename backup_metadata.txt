@@ -1,0 +1,13 @@
+Backup Date: 2025-11-02 07:41:41
+Container: RT-005-WUI-container
+Container Status: Up 12 minutes (healthy)
+WebUI Version: 
+Database Size: 264K
+Total Data Size: 1.9G
+Ollama Base URL: 
+
+Database Statistics:
+Users: 1
+Chats: 0
+Documents: 0
+Prompts: 0

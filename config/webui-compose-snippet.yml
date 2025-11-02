@@ -1,0 +1,21 @@
+  # Open WebUI
+  webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: RT-005-WUI-container
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - open-webui:/app/backend/data
+    networks:
+      - services-network
+
+  # PostgreSQL with pgvector for Chatwoot
+  postgres-pgvector:
+    image: pgvector/pgvector:pg16
+    container_name: postgres-pgvector
+    restart: unless-stopped

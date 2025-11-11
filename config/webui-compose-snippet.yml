@@ -1,4 +1,6 @@
-  # Open WebUI
+  # Open WebUI - AI Assistant Interface
+  # ⚠️  WARNING: Only pull latest image, do not rebuild
+  # Usage: Configure settings, create conversations (CLIENT LEVEL ONLY)
   webui:
     image: ghcr.io/open-webui/open-webui:main
     container_name: RT-005-WUI-container
@@ -15,7 +17,5 @@
       - services-network
 
   # PostgreSQL with pgvector for Chatwoot
-  postgres-pgvector:
-    image: pgvector/pgvector:pg16
-    container_name: postgres-pgvector
-    restart: unless-stopped
+  # ⚠️  WARNING: Only pull latest image, do not rebuild
+  # Data is persistent in pgvector_data volume

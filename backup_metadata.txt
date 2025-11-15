@@ -1,6 +1,6 @@
-Backup Date: 2025-11-14 19:33:21
+Backup Date: 2025-11-14 19:48:06
 Container: RT-005-WUI-container
-Container Status: Up 3 seconds (health: starting)
+Container Status: Up 14 minutes (healthy)
 WebUI Version: 
 Database Size: 264K
 Total Data Size: 1.9G
